@@ -1,0 +1,23 @@
+<html>
+<head>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- include Vue 2.x -->
+<script src="/js/vue2.js"></script>
+<!-- include vue-treeselect & its styles. you can change the version tag to better suit your need. -->
+<script src="/js/vue-treeselect.js"></script>
+<link rel="stylesheet" href="/css/vue-treeselect.css">
+<script type="text/javascript">
+    	
+    </script>
+</head>
+<body>
+	<div id="app">
+		<treeselect id="treeselect" @close="closeHandler(event)"
+			v-model="value" :multiple="true" :options="options" />
+	</div>
+	<script src="/js/test.js"></script>
+</body>
+</html>
